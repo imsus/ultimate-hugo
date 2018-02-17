@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#1a95c9">
+  <title>Hugo Ultimate Boilerplate</title>
+  <meta name="description" content="Kickstart your development using pre built-in Static Site Generator common features.">
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="canonical" href="https://hugo-ultimate-boilerplate.netlify.com">
+  <style>
+    /* Critical CSS */
+    html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}main{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}img{border-style:none}svg:not(:root){overflow:hidden}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-family:sans-serif}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}h1,h2,h3,p{margin:0}*,:after,:before{border:0 solid #dae1e7}img{max-width:100%}body{text-rendering:optimizeLegibility;-webkit-font-feature-settings:"liga" on;font-feature-settings:"liga" on;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.container{width:100%}@media (min-width:576px){.container{max-width:576px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:992px){.container{max-width:992px}}@media (min-width:1200px){.container{max-width:1200px}}.bg-grey-lighter{background-color:#f1f5f8}.bg-grey-lightest{background-color:#f8fafc}.bg-white{background-color:#fff}.bg-green-darker{background-color:#1a4731}.bg-blue-dark{background-color:#2779bd}.rounded-sm{border-radius:.125rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.inline-block{display:inline-block}.flex{display:-webkit-box;display:-ms-flexbox;display:flex}.flex-col{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.flex-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.justify-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.justify-between{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.flex-auto{-webkit-box-flex:1;-ms-flex:auto;flex:auto}.flex-none{-webkit-box-flex:0;-ms-flex:none;flex:none}.font-mono{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.font-bold{font-weight:700}.h-12{height:3rem}.h-64{height:16rem}.h-full{height:100%}.leading-tight{line-height:1.25}.leading-normal{line-height:1.5}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-8{margin-left:2rem}.max-w-xl{max-width:60rem}.min-h-screen{min-height:100vh}.p-3{padding:.75rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.shadow{-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.1);box-shadow:0 2px 4px 0 rgba(0,0,0,.1)}.text-center{text-align:center}.text-grey-darkest{color:#3d4852}.text-grey-darker{color:#606f7b}.text-white{color:#fff}.text-sm{font-size:.875rem}.text-base{font-size:1rem}.text-xl{font-size:1.25rem}.text-3xl{font-size:1.875rem}.no-underline{text-decoration:none}.w-1\/2{width:50%}@media (min-width:768px){.md\:w-1\/3{width:33.33333%}}@media (min-width:992px){.lg\:px-0{padding-left:0;padding-right:0}.lg\:py-3{padding-top:.75rem;padding-bottom:.75rem}.lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}.lg\:text-base{font-size:1rem}.lg\:text-lg{font-size:1.125rem}.lg\:text-4xl{font-size:2.25rem}.lg\:w-1\/4{width:25%}}
+  </style>
+  <link rel="preload" href="/css/client.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/client.css"></noscript>
+  <script>
+    /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+    !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-XXXXXXXX-X');
+  </script>
+</head>
+<body>
+  <section id="root" class="flex flex-col min-h-screen bg-grey-lighter">
+    <header class="border-b shadow bg-blue-dark text-white flex-none">
+      <div class="container mx-auto max-w-xl flex flex-auto p-3 items-center justify-between">
+        <h1 class="text-xl">Hugo Ultimate Boilerplate</h1>
+        <nav>
+          <a href="https://github.com/imsus/hugo-ultimate-boilerplate" class="inline-block ml-8 no-underline text-white hover:bg-blue-darker py-1 px-2 rounded-sm">Github</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-auto">
+      <div class="container mx-auto max-w-xl lg:px-0 pb-8">
+        <div class="p-3 h-64 flex flex-col items-center justify-center mb-6 px-3">
+          <h1 class="lg:text-4xl text-3xl mb-4 text-center">Hugo Ultimate Boilerplate</h1>
+          <p class="text-grey-darkest mb-6 lg:text-lg leading-normal text-center">Kickstart your development using pre built-in Static Site Generator common features.</p>
+          <a href="" class="lg:py-3 py-2 lg:px-6 px-4 text-sm lg:text-base text-white no-underline bg-green-darker rounded-sm shadow hover:bg-green-darkest font-bold">Read Getting Started</a>
+        </div>
+        <div>
+          <h2 class="text-center mb-6">Features</h2>
+          <div class="flex flex-wrap justify-center px-2">
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="https://png.icons8.com/office/96/css.png" height="48" width="48" alt="">
+                </div>
+                <h3 class="mb-2 leading-tight lg:text-lg">Critical CSS</h3>
+                <p class="leading-normal text-grey-darker">Replace your css with critical css, then followed by deferred full css.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="https://png.icons8.com/office/96/picture.png" height="48" width="48" alt="">
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">Lazyload Images</h3>
+                <p class="leading-normal text-grey-darker">Automatically replace all of your images into lazyloaded images.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <svg class="h-12 flex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1952.00 734.93" enable-background="new 0 0 1952.00 734.93" xml:space="preserve"><g><path fill="#3D3D3D" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 1436.62,603.304L 1493.01,460.705L 1655.83,460.705L 1578.56,244.39L 1675.2,0.000528336L 1952,734.933L 1747.87,734.933L 1700.57,603.304L 1436.62,603.304 Z "></path><path fill="#348fdd" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 1262.47,734.935L 1558.79,0.00156593L 1362.34,0.0025425L 1159.64,474.933L 1015.5,0.00351906L 864.499,0.00351906L 709.731,474.933L 600.585,258.517L 501.812,562.819L 602.096,734.935L 795.427,734.935L 935.284,309.025L 1068.63,734.935L 1262.47,734.935 Z "></path><path fill="#3D3D3D" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 186.476,482.643L 307.479,482.643C 344.133,482.643 376.772,478.552 405.396,470.37L 436.689,373.962L 524.148,104.516C 517.484,93.9535 509.876,83.9667 501.324,74.5569C 456.419,24.852 390.719,0.000406265 304.222,0.000406265L -3.8147e-006,0.000406265L -3.8147e-006,734.933L 186.476,734.933L 186.476,482.643 Z M 346.642,169.079C 364.182,186.732 372.951,210.355 372.951,239.95C 372.951,269.772 365.238,293.424 349.813,310.906C 332.903,330.331 301.766,340.043 256.404,340.043L 186.476,340.043L 186.476,142.598L 256.918,142.598C 299.195,142.598 329.103,151.425 346.642,169.079 Z "></path></g></svg>
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">PWA Ready</h3>
+                <p class="leading-normal text-grey-darker">Built in service worker configuration and manifest.json file.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="https://cdn.svgporn.com/logos/google-analytics.svg" height="48" width="48" alt="">
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">Google Analytics</h3>
+                <p class="leading-normal text-grey-darker">Google Analytics integration with latest gtag.js implementation.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="https://cdn.svgporn.com/logos/netlify.svg" height="48" width="48" alt="">
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">Netlify Deployment</h3>
+                <p class="leading-normal text-grey-darker">Optimized for Netlify Deployment. Netlify.toml included in the project.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="https://png.icons8.com/office/96/security-checked.png" height="48" width="48" alt="">
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">Secure Headers</h3>
+                <p class="leading-normal text-grey-darker">Best practices of using security headers. Integrated with netlify _headers file.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <svg class="h-12 flex" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="40" cy="40" r="40"></circle><filter x="-8.8%" y="-6.2%" width="117.5%" height="117.5%" filterUnits="objectBoundingBox" id="a"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix></filter><linearGradient x1="0%" y1="0%" y2="100%" id="c"><stop stop-color="#2383AE" offset="0%"></stop><stop stop-color="#6DD7B9" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><g transform="translate(5 5)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M25.6 33.92C27.52 26.24 32.32 22.4 40 22.4c11.52 0 12.96 8.64 18.72 10.08 3.84.96 7.2-.48 10.08-4.32-1.92 7.68-6.72 11.52-14.4 11.52-11.52 0-12.96-8.64-18.72-10.08-3.84-.96-7.2.48-10.08 4.32zM11.2 51.2c1.92-7.68 6.72-11.52 14.4-11.52 11.52 0 12.96 8.64 18.72 10.08 3.84.96 7.2-.48 10.08-4.32-1.92 7.68-6.72 11.52-14.4 11.52-11.52 0-12.96-8.64-18.72-10.08-3.84-.96-7.2.48-10.08 4.32z" fill="url(#c)" transform="translate(5 5)"></path></g></svg>
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">TailwindCSS</h3>
+                <p class="leading-normal text-grey-darker">Optimized for TailwindCSS project. Compressed and minified using PurgeCSS.</p>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+              <div class="bg-white mx-2 border shadow p-3 rounded-sm flex flex-col h-full">
+                <div class="text-center mb-4">
+                  <img class="flex" src="/img/poi.png" height="48" width="127" alt="">
+                </div>
+                <h3 class="mb-2 text-base leading-tight lg:text-lg">Poi Bundler</h3>
+                <p class="leading-normal text-grey-darker">Lightweight and Good DX bundler. Poi-preset-offline included in the project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex-none bg-grey-lightest">
+      <div class="mx-auto max-w-xl px-3 py-6 font-mono text-grey-darker text-center">
+        A sideproject by Imam Susanto.
+      </div>
+    </footer>
+  </section>
+
+  <!-- Go to SRI Hash https://www.srihash.org/ to get integrity
+       integrity="sha256-xxxxx" crossorigin="anonymous" -->
+  <script src="/js/manifest.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/client.js"></script>
+</body>
+</html>

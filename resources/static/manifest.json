@@ -1,0 +1,21 @@
+{
+  "name": "Hugo Ultimate Boilerplate",
+  "short_name": "Ultimate",
+  "description": "Boilerplate for modern static site generator",
+  "lang": "en-US",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1a95c9",
+  "background_color": "#f1f5f8",
+  "icons": [{
+    "src": "/icons/android-chrome-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "/icons/android-chrome-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+}

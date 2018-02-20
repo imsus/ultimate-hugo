@@ -1,4 +1,7 @@
 /*
+  Content-Security-Policy: script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; report-uri https://csp.example.com;
+  Referrer-Policy: no-referrer-when-downgrade
+  X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
-  X-Content-Type-Options: nosniff
+

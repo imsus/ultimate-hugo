@@ -4,24 +4,17 @@ const glob = require('glob-all')
 const path = require('path')
 const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 const TailwindExtractor = require('./tailwind-extractor')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = options => ({
-  presets: [
-    require('poi-preset-offline')({
-      pwa: './resources/pwa.js',
-      pluginOptions: {
-        externals: ['/index.html'],
-        excludes: ['**/.*', '**/_*', '**/*.map', '**/*.gz'],
-        ServiceWorker: { credentials: 'omit', mode: 'no-cors' },
-        AppCache: false
-      }
-    })
-  ],
-  dist: 'static',
+  outDir: 'static',
+  cleanOutDir: true,
   staticFolder: 'resources/static',
   sourceMap: false,
   html: false,
-  extractCSS: true,
+  css: {
+    extract: true
+  },
   filename: {
     js: 'js/[name].js',
     css: 'css/[name].css',
@@ -32,23 +25,26 @@ module.exports = options => ({
   copy: [
     { from: 'resources/static', to: './' }
   ],
-  templateCompiler: true,
-  extendWebpack(config) {
+  vue: {
+    fullBuild: true
+  },
+  chainWebpack(config) {
     if (options.mode === 'production') {
-      config.plugin('purge').use(PurgeCSSPlugin, [
-        {
-          paths: glob.sync([
-            path.join(__dirname, 'layouts/**/*.html'),
-            path.join(__dirname, 'resources/js/**/*.vue')
-          ]),
-          extractors: [
-            {
-              extractor: TailwindExtractor,
-              extensions: ['html', 'js', 'vue']
-            }
-          ]
-        }
-      ])
+      config.plugin('workbox').init(Plugin => new WorkboxPlugin.GenerateSW())
+      // config.plugin('purge').use(PurgeCSSPlugin, [
+      //   {
+      //     paths: glob.sync([
+      //       path.join(__dirname, 'layouts/**/*.html'),
+      //       path.join(__dirname, 'resources/js/**/*.vue')
+      //     ]),
+      //     extractors: [
+      //       {
+      //         extractor: TailwindExtractor,
+      //         extensions: ['html', 'js', 'vue']
+      //       }
+      //     ]
+      //   }
+      // ])
     }
   }
 })

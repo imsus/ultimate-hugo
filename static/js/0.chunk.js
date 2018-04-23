@@ -1,1 +1,0 @@
-webpackJsonp([0],{11:function(e,o,t){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),o.default=function(){return console.log("Message from website")}}});
